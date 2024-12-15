@@ -1,0 +1,47 @@
+{
+  "name": "arraypress/register-assets",
+  "version": "1.0.0",
+  "description": "A streamlined WordPress asset manager for scripts and styles with advanced features",
+  "type": "library",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/arraypress/register-assets/",
+  "authors": [
+    {
+      "name": "David Sherlock",
+      "homepage": "https://arraypress.com/"
+    }
+  ],
+  "require": {
+    "php": ">=7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "ArrayPress\\WP\\": "src/"
+    },
+    "files": [
+      "utils/Functions.php"
+    ]
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true
+  },
+  "minimum-stability": "stable",
+  "support": {
+    "issues": "https://github.com/arraypress/register-assets/issues",
+    "source": "https://github.com/arraypress/register-assets"
+  },
+  "keywords": [
+    "wordpress",
+    "assets",
+    "scripts",
+    "styles",
+    "enqueue",
+    "register",
+    "dependency",
+    "management",
+    "minification",
+    "async",
+    "defer"
+  ]
+}
