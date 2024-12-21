@@ -19,14 +19,12 @@ A streamlined approach to managing WordPress scripts and styles with advanced fe
 ## Installation
 
 ```bash
-composer require arraypress/register-assets
+composer require arraypress/wp-register-assets
 ```
 
 ## Basic Usage
 
 ```php
-use ArrayPress\WP\register_assets;
-
 // Define your assets
 $assets = [
     [
@@ -51,7 +49,7 @@ $config = [
 ];
 
 // Register assets
-$manager = register_assets( __FILE__, $assets, $config );
+$manager = wp_register_assets( __FILE__, $assets, $config );
 ```
 
 ## Advanced Usage

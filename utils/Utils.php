@@ -41,13 +41,9 @@
 
 declare( strict_types=1 );
 
-namespace ArrayPress\WP;
+use ArrayPress\WP\RegisterAssets;
 
-use Exception;
-use InvalidArgumentException;
-use WP_Error;
-
-if ( ! function_exists( __NAMESPACE__ . '\register_assets' ) ):
+if ( ! function_exists( __NAMESPACE__ . '\wp_register_assets' ) ):
 	/**
 	 * Register custom assets (scripts and styles) for WordPress.
 	 *
@@ -60,7 +56,7 @@ if ( ! function_exists( __NAMESPACE__ . '\register_assets' ) ):
 	 * @return RegisterAssets|WP_Error|null RegisterAssets manager instance, WP_Error on validation failure,
 	 *                                      or null on exception
 	 */
-	function register_assets(
+	function wp_register_assets(
 		string $file,
 		array $assets,
 		array $config = [],

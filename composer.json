@@ -19,7 +19,7 @@
       "ArrayPress\\WP\\": "src/"
     },
     "files": [
-      "utils/Functions.php"
+      "utils/Utils.php"
     ]
   },
   "config": {
