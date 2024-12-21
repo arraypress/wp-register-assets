@@ -1,10 +1,10 @@
 {
-  "name": "arraypress/register-assets",
+  "name": "arraypress/wp-register-assets",
   "version": "1.0.0",
   "description": "A streamlined WordPress asset manager for scripts and styles with advanced features",
   "type": "library",
   "license": "GPL-2.0-or-later",
-  "homepage": "https://github.com/arraypress/register-assets/",
+  "homepage": "https://github.com/arraypress/wp-register-assets/",
   "authors": [
     {
       "name": "David Sherlock",
@@ -29,8 +29,8 @@
   },
   "minimum-stability": "stable",
   "support": {
-    "issues": "https://github.com/arraypress/register-assets/issues",
-    "source": "https://github.com/arraypress/register-assets"
+    "issues": "https://github.com/arraypress/wp-register-assets/issues",
+    "source": "https://github.com/arraypress/wp-register-assets"
   },
   "keywords": [
     "wordpress",
