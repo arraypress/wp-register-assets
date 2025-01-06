@@ -16,10 +16,10 @@
   },
   "autoload": {
     "psr-4": {
-      "ArrayPress\\WP\\": "src/"
+      "ArrayPress\\WP\\Register\\": "src/"
     },
     "files": [
-      "utils/Utils.php"
+      "src/Utilities.php"
     ]
   },
   "config": {

@@ -13,7 +13,7 @@
 
 declare( strict_types=1 );
 
-namespace ArrayPress\WP;
+namespace ArrayPress\WP\Register;
 
 /**
  * Class AssetCollection

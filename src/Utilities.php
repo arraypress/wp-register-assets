@@ -41,9 +41,9 @@
 
 declare( strict_types=1 );
 
-use ArrayPress\WP\RegisterAssets;
+use ArrayPress\WP\Register\Assets;
 
-if ( ! function_exists( __NAMESPACE__ . '\wp_register_assets' ) ):
+if ( ! function_exists( 'register_assets' ) ):
 	/**
 	 * Register custom assets (scripts and styles) for WordPress.
 	 *
@@ -53,10 +53,10 @@ if ( ! function_exists( __NAMESPACE__ . '\wp_register_assets' ) ):
 	 *                                      Supports all options from RegisterAssets::parse_config()
 	 * @param callable|null $error_callback Optional. Callback function for error handling
 	 *
-	 * @return RegisterAssets|WP_Error|null RegisterAssets manager instance, WP_Error on validation failure,
+	 * @return Assets|WP_Error|null RegisterAssets manager instance, WP_Error on validation failure,
 	 *                                      or null on exception
 	 */
-	function wp_register_assets(
+	function register_assets(
 		string $file,
 		array $assets,
 		array $config = [],
@@ -80,7 +80,7 @@ if ( ! function_exists( __NAMESPACE__ . '\wp_register_assets' ) ):
 			}
 
 			// Initialize the RegisterAssets manager
-			$manager = new RegisterAssets( $file, $config );
+			$manager = new Assets( $file, $config );
 
 			// Apply any specific configuration settings
 			if ( ! empty( $config['debug'] ) ) {

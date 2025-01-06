@@ -24,7 +24,7 @@
 
 declare( strict_types=1 );
 
-namespace ArrayPress\WP;
+namespace ArrayPress\WP\Register;
 
 use InvalidArgumentException;
 use WP_Error;
@@ -34,7 +34,7 @@ use WP_Error;
  *
  * Register and manage custom scripts and styles with optional conditional loading.
  */
-class RegisterAssets {
+class Assets {
 
 	/**
 	 * Default configuration settings
